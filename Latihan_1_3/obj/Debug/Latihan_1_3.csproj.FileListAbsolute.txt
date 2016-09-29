@@ -1,0 +1,9 @@
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\bin\Debug\Latihan_1_3.exe.config
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\bin\Debug\Latihan_1_3.exe
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\bin\Debug\Latihan_1_3.pdb
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\obj\Debug\Latihan_1_3.csprojResolveAssemblyReference.cache
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\obj\Debug\Latihan_1_3.Form1.resources
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\obj\Debug\Latihan_1_3.Properties.Resources.resources
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\obj\Debug\Latihan_1_3.csproj.GenerateResource.Cache
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\obj\Debug\Latihan_1_3.exe
+B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_3\obj\Debug\Latihan_1_3.pdb

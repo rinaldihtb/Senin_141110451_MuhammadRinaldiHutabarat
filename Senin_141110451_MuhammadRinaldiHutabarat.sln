@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latihan_1_2", "Latihan_1_2\Latihan_1_2.csproj", "{B31BBDC0-6EE9-4A06-B648-0EC7BB87C931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latihan_1_1", "Latihan_1_1\Latihan_1_1.csproj", "{5BEE5E9D-A198-47FF-ADF6-FDA5B8E21A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latihan_1_3", "Latihan_1_3\Latihan_1_3.csproj", "{4F6FFBFF-9898-4FBE-8AE5-E90DE49C086F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B31BBDC0-6EE9-4A06-B648-0EC7BB87C931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31BBDC0-6EE9-4A06-B648-0EC7BB87C931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31BBDC0-6EE9-4A06-B648-0EC7BB87C931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31BBDC0-6EE9-4A06-B648-0EC7BB87C931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BEE5E9D-A198-47FF-ADF6-FDA5B8E21A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BEE5E9D-A198-47FF-ADF6-FDA5B8E21A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BEE5E9D-A198-47FF-ADF6-FDA5B8E21A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BEE5E9D-A198-47FF-ADF6-FDA5B8E21A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6FFBFF-9898-4FBE-8AE5-E90DE49C086F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6FFBFF-9898-4FBE-8AE5-E90DE49C086F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6FFBFF-9898-4FBE-8AE5-E90DE49C086F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6FFBFF-9898-4FBE-8AE5-E90DE49C086F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
