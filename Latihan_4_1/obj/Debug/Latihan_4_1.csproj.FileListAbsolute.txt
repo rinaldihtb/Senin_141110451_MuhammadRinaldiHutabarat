@@ -1,0 +1,8 @@
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\bin\Debug\Latihan_4_1.exe.config
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\bin\Debug\Latihan_4_1.exe
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\bin\Debug\Latihan_4_1.pdb
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\obj\Debug\Latihan_4_1.Form1.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\obj\Debug\Latihan_4_1.Properties.Resources.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\obj\Debug\Latihan_4_1.csproj.GenerateResource.Cache
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\obj\Debug\Latihan_4_1.exe
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_4_1\obj\Debug\Latihan_4_1.pdb
