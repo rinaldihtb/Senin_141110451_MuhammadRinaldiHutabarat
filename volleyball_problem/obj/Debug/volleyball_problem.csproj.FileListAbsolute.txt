@@ -1,0 +1,9 @@
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\bin\Debug\volleyball_problem.exe.config
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\bin\Debug\volleyball_problem.exe
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\bin\Debug\volleyball_problem.pdb
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\obj\Debug\volleyball_problem.csprojResolveAssemblyReference.cache
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\obj\Debug\volleyball_problem.Form1.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\obj\Debug\volleyball_problem.Properties.Resources.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\obj\Debug\volleyball_problem.csproj.GenerateResource.Cache
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\obj\Debug\volleyball_problem.exe
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\volleyball_problem\obj\Debug\volleyball_problem.pdb
