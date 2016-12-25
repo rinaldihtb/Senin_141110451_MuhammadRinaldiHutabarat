@@ -7,3 +7,12 @@ B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_Muh
 B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.pdb
 B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.csprojResolveAssemblyReference.cache
 B:\Data\Dropbox\Semester5\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.Form1.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\bin\Debug\Latihan_1_1.exe.config
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\bin\Debug\Latihan_1_1.exe
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\bin\Debug\Latihan_1_1.pdb
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.csprojResolveAssemblyReference.cache
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.Form1.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.Properties.Resources.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.csproj.GenerateResource.Cache
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.exe
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Latihan_1_1\obj\Debug\Latihan_1_1.pdb

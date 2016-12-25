@@ -7,26 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Latihan_3_1
 {
     public partial class Form1 : Form
     {
+        private bool boldV = false;
+        private bool italicV = false;
+        private bool underlineV = false;
+
+        private string firstText;
         public Form1()
         {
             InitializeComponent();
+            this.firstText = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!richTextBox1.SelectionFont.Underline)
-            {
-                richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Underline);
-            }
-            else
-            {
-                richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Regular);
-            }
+            this.underlineV = true;
+            //this.BIU();
+            this.changeFontSize();
+            this.underlineV = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -45,20 +48,20 @@ namespace Latihan_3_1
                 {
                     i += 3;
                 }
-                comboBox1.Items.Add(i + " pt");
+                fontChange.Items.Add(i + " pt");
 
             }
 
             foreach (FontFamily ffs in FontFamily.Families)
             {
-                comboBox2.Items.Add(ffs.Name);
+                FfamilyChange.Items.Add(ffs.Name);
             }
 
             foreach (System.Reflection.PropertyInfo Props in typeof(Color).GetProperties())
             {
                 if (Props.PropertyType.FullName == "System.Drawing.Color")
                 {
-                  comboBox3.Items.Add(Props.Name);
+                  ColorChange.Items.Add(Props.Name);
                 }
                 //comboBox3.Items.Add(Props.Name);
                 //comboBox3.Items.Add(Props.PropertyType.FullName);
@@ -67,42 +70,146 @@ namespace Latihan_3_1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int size = Convert.ToInt32(comboBox1.Text.Split(' ')[0]);
-            richTextBox1.SelectionFont = new System.Drawing.Font(richTextBox1.SelectionFont.FontFamily, size);
+            this.changeFontSize();
+            //int size = Convert.ToInt32(fontChange.Text.Split(' ')[0]);
+            //richTextBox1.SelectionFont = new System.Drawing.Font(richTextBox1.SelectionFont.FontFamily, size);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int size = Convert.ToInt32(comboBox1.Text.Split(' ')[0]);
-            richTextBox1.SelectionFont = new System.Drawing.Font(comboBox2.Text, size, richTextBox1.SelectionFont.Style);
+            this.changeFontSize();
+            /*int size = Convert.ToInt32(fontChange.Text.Split(' ')[0]);
+            
+            richTextBox1.SelectionFont = new System.Drawing.Font(FfamilyChange.Text, size, richTextBox1.SelectionFont.Style);*/
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richTextBox1.SelectionColor = Color.FromName(comboBox3.Text);
+            richTextBox1.SelectionColor = Color.FromName(ColorChange.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!richTextBox1.SelectionFont.Bold)
-            {
-                richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Bold);
-            }
-            else
-            {
-                richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Regular);
-            }
+            this.boldV = true;
+            //this.BIU();
+            this.changeFontSize();
+            this.boldV = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!richTextBox1.SelectionFont.Italic)
+            this.italicV = true;
+            //this.BIU();
+            this.changeFontSize();
+            this.italicV = false;
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void changeFontSize()
+        {
+            int size = Convert.ToInt32(fontChange.Text.Split(' ')[0]);
+            int PosisiAwal = richTextBox1.SelectionStart;
+            int PosisiAkhir = richTextBox1.SelectionLength;
+            for (int i = PosisiAwal; i < PosisiAwal + PosisiAkhir; i++)
             {
-                richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Italic);
+                //SET PENENTUAN POSISI yang akan diganti perHURUF
+                richTextBox1.SelectionStart = i;
+                richTextBox1.SelectionLength = 1;
+                this.BIU();
+                richTextBox1.SelectionFont = new System.Drawing.Font(FfamilyChange.Text, size, richTextBox1.SelectionFont.Style);
             }
-            else
+            richTextBox1.SelectionStart = PosisiAwal;
+            richTextBox1.SelectionLength = PosisiAkhir;
+            /*richTextBox1.SelectionFont = new System.Drawing.Font(FfamilyChange.Text, size, richTextBox1.SelectionFont.Style);*/
+        }
+
+        private void BIU()
+        {
+            Font slf, slfNew;
+            slf = richTextBox1.SelectionFont;
+            //UNDERLINE
+            if (underlineV)
             {
-                richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Regular);
+                if (slf.Underline)
+                    slfNew = new Font(richTextBox1.Font, slf.Style & ~FontStyle.Underline);
+                else
+                    slfNew = new Font(slf, slf.Style |FontStyle.Underline);
+                richTextBox1.SelectionFont = slfNew;
+            }
+            //BOLD
+            if (boldV)
+            {
+                if (slf.Bold)
+                    slfNew = new Font(slf, slf.Style & ~FontStyle.Bold);
+                else
+                    slfNew = new Font(slf, slf.Style | FontStyle.Bold);
+                richTextBox1.SelectionFont = slfNew;
+            }
+            //ITALIC
+            if (italicV)
+            {
+                if (slf.Italic)
+                    slfNew = new Font(slf, slf.Style & ~FontStyle.Italic);
+                else
+                    slfNew = new Font(slf, slf.Style | FontStyle.Italic);
+                richTextBox1.SelectionFont = slfNew;
+            }
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.Text = File.ReadAllText(openFileDialog1.FileName);
+                this.firstText = richTextBox1.Text;
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.save();
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void save()
+        {
+            saveFileDialog1.Filter = "All Files (*.*)|*.*| Text Document (*.txt)|*.txt|Rich Textbox Format (*.rft)|*.rft";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text); 
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (richTextBox1.Text != this.firstText)
+            {
+                DialogResult check = MessageBox.Show("Save changes ?", "My Application", MessageBoxButtons.YesNoCancel);
+                if (check == DialogResult.Yes)
+                {
+                    this.save();
+                }
+                else if (check == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
             }
         }
 
