@@ -96,5 +96,65 @@ namespace Database_POS
             DateTime datetime = new DateTime(year, month, day, hour, min, sec);
             return datetime;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string kode_param = this.Ekodebarang.Text;
+            query = new MySqlCommand("select * from barang where kode=@kode", con);
+            query.Parameters.AddWithValue("@kode", kode_param);
+            MySqlDataReader Reader = query.ExecuteReader();
+
+            if (!Reader.HasRows)
+            {
+                con.Close();
+                MessageBox.Show("Data Tidak Ditemukan");
+                return;
+            }
+            if (Reader.Read())
+            {
+                this.Enamabarang.Text = Reader["nama"].ToString();
+                this.Estockbarang.Text = Reader["stock"].ToString();
+                this.Ehargabeli.Text = Reader["harga_beli"].ToString();
+                this.Ehargajual.Text = Reader["harga_jual"].ToString();
+            }
+            Reader.Close();
+            con.Close();
+            //MessageBox.Show(DA..ToString());
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string kodebarang = this.Ekodebarang.Text;
+            string namabarang = this.Enamabarang.Text;
+            string stockbarang = this.Estockbarang.Text;
+            string hbelibarang = this.Ehargabeli.Text;
+            string hjualbarang = this.Ehargajual.Text;
+            DateTime datenow = getdatetime();
+
+
+            query = new MySqlCommand("UPDATE barang SET Nama=@nama, Stock=@jstok, Harga_Beli=@hargabeli, Harga_Jual=@hargajual WHERE Kode=@kode", con);
+            query.Parameters.AddWithValue("@kode", kodebarang);
+            query.Parameters.AddWithValue("@nama", namabarang);
+            query.Parameters.AddWithValue("@jstok", stockbarang);
+            query.Parameters.AddWithValue("@hargabeli", hbelibarang);
+            query.Parameters.AddWithValue("@hargajual", hjualbarang);
+            query.Parameters.AddWithValue("@dateupdate", datenow);
+
+            try
+            {
+                con.Open();
+                query.ExecuteNonQuery();
+                MessageBox.Show("Berhasil Edit Barang");
+                con.Close();
+                view_barang();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                con.Close();
+            }
+        }
     }
 }
