@@ -35,5 +35,31 @@ namespace Database_POS
         {
 
         }
+
+        private void supplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Supplier form_supplier = new Supplier();
+            form_supplier.MdiParent = this;
+            form_supplier.Show();
+        }
+
+        private void pembelianToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void transaksiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Transaksi form_transaksi = new Transaksi();
+            form_transaksi.MdiParent = this;
+            form_transaksi.Show();
+        }
+
+        private void reportToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Report form_report = new Report();
+            form_report.MdiParent = this;
+            form_report.Show();
+        }
     }
 }

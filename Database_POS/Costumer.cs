@@ -23,7 +23,7 @@ namespace Database_POS
         public Costumer()
         {
             InitializeComponent();
-            this.view_barang();
+            this.view_customer();
         }
 
         private void Costumer_Load(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace Database_POS
         
         }
 
-        public void view_barang()
+        public void view_customer()
         {
             query = new MySqlCommand("select * from customer", con);
             DA = new MySqlDataAdapter(query);
@@ -69,7 +69,7 @@ namespace Database_POS
                 query.ExecuteNonQuery();
                 MessageBox.Show("Berhasil Input Costumer");
                 con.Close();
-                view_barang();
+                this.view_customer();
             }
             catch (Exception ex)
             {
@@ -108,6 +108,7 @@ namespace Database_POS
             }
             if (Reader.Read())
             {
+                this.ID_costumer = Reader["id"].ToString();
                 this.Enamakostumer.Text = Reader["Nama"].ToString();
                 this.Ealamatkostumer.Text = Reader["Alamat"].ToString();
                 this.Enokostumer.Text = Reader["NoHp"].ToString();
@@ -139,7 +140,30 @@ namespace Database_POS
                 query.ExecuteNonQuery();
                 MessageBox.Show("Berhasil Update Costumer");
                 con.Close();
-                view_barang();
+                this.view_customer();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                con.Close();
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            query = new MySqlCommand("DELETE FROM customer WHERE ID=@id", con);
+            query.Parameters.AddWithValue("@id", this.ID_costumer);
+            try
+            {
+                con.Open();
+                query.ExecuteNonQuery();
+                this.Eidkostumer.Text = null;
+                this.Enamakostumer.Text = null;
+                this.Ealamatkostumer.Text = null;
+                this.Enokostumer.Text = null;
+                MessageBox.Show("Data Berhasil di Hapus");
+                con.Close();
+                this.view_customer();
             }
             catch (Exception ex)
             {

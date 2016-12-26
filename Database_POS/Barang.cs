@@ -18,6 +18,7 @@ namespace Database_POS
         MySqlDataAdapter DA;
         DataTable DT = new DataTable();
         MySqlCommand query;
+        public string id_barang;
         public Barang()
         {
             InitializeComponent();
@@ -48,7 +49,7 @@ namespace Database_POS
 
         }
 
-        private void save_barang_button_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
             string kodebarang = this.barang_kode.Text;
             string namabarang = this.barang_nama.Text;
@@ -74,7 +75,7 @@ namespace Database_POS
                 query.ExecuteNonQuery();
                 MessageBox.Show("Berhasil Input Barang");
                 con.Close();
-                view_barang();
+                this.view_barang();
             }
             catch (Exception ex)
             {
@@ -113,6 +114,7 @@ namespace Database_POS
             }
             if (Reader.Read())
             {
+                this.id_barang = Reader["id"].ToString();
                 this.Enamabarang.Text = Reader["nama"].ToString();
                 this.Estockbarang.Text = Reader["stock"].ToString();
                 this.Ehargabeli.Text = Reader["harga_beli"].ToString();
@@ -148,7 +150,63 @@ namespace Database_POS
                 query.ExecuteNonQuery();
                 MessageBox.Show("Berhasil Edit Barang");
                 con.Close();
-                view_barang();
+                this.view_barang();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                con.Close();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            query = new MySqlCommand("DELETE FROM barang WHERE ID=@id", con);
+            query.Parameters.AddWithValue("@id", this.id_barang);
+            try
+            {
+                con.Open();
+                query.ExecuteNonQuery();
+                this.Enamabarang.Text = null;
+                this.Estockbarang.Text = null;
+                this.Ehargabeli.Text = null;
+                this.Ehargajual.Text = null;
+                MessageBox.Show("Data Berhasil di Hapus");
+                con.Close();
+                this.view_barang();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                con.Close();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string kodebarang = this.Ekodebarang.Text;
+            string namabarang = this.Enamabarang.Text;
+            string stockbarang = this.Estockbarang.Text;
+            string hbelibarang = this.Ehargabeli.Text;
+            string hjualbarang = this.Ehargajual.Text;
+            DateTime datenow = getdatetime();
+
+
+            query = new MySqlCommand("UPDATE barang SET Nama=@nama, Stock=@jstok, Harga_Beli=@hargabeli, Harga_Jual=@hargajual WHERE Kode=@kode", con);
+            query.Parameters.AddWithValue("@kode", kodebarang);
+            query.Parameters.AddWithValue("@nama", namabarang);
+            query.Parameters.AddWithValue("@jstok", stockbarang);
+            query.Parameters.AddWithValue("@hargabeli", hbelibarang);
+            query.Parameters.AddWithValue("@hargajual", hjualbarang);
+            query.Parameters.AddWithValue("@dateupdate", datenow);
+
+            try
+            {
+                con.Open();
+                query.ExecuteNonQuery();
+                MessageBox.Show("Berhasil Edit Barang");
+                con.Close();
+                this.view_barang();
             }
             catch (Exception ex)
             {

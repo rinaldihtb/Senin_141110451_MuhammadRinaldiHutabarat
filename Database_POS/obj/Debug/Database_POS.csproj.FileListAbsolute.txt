@@ -10,3 +10,5 @@ D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan
 D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Database_POS\obj\Debug\Database_POS.csprojResolveAssemblyReference.cache
 D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Database_POS\obj\Debug\Database_POS.Costumer.resources
 D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Database_POS\bin\Debug\MySql.Data.dll
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Database_POS\obj\Debug\Database_POS.Supplier.resources
+D:\rinaldi\kuliah\Pemrogramn Framework Lanjutan\tugas\Pemgrograman .Net Lanjutan\Latihan\Senin_141110451_MuhammadRinaldiHutabarat\Database_POS\obj\Debug\Database_POS.Transaksi.resources
